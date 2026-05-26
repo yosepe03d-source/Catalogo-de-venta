@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Fangel's Studio
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo-container">
+
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+
+            <h1>
+                Fangel's
+            </h1>
+
+        </div>
+
+        <!-- MENU -->
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="#categorias">
+                Categorías
+            </a>
+
+            <a href="#catalogo">
+                Catálogo
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+        </nav>
+
+        <!-- CARRITO -->
+        <div class="carrito-icono" onclick="abrirCarrito()">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">
+                0
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- PANEL CARRITO -->
+    <div id="panel-carrito">
+
+        <div class="carrito-header">
+
+            <h2>
+                Mi Carrito
+            </h2>
+
+            <i class="fa-solid fa-xmark" onclick="cerrarCarrito()"></i>
+
+        </div>
+
+        <!-- ITEMS -->
+        <div id="carrito-items">
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="carrito-footer">
+
+            <h3>
+
+                Total:
+                <span id="total">
+                    $0
+                </span>
+
+            </h3>
+
+            <button class="btn-finalizar">
+
+                Finalizar Compra
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-texto">
+
+            <h2>
+
+                Productos Profesionales
+                Peluquería, Maquillaje & Uñas
+                🛍️
+
+            </h2>
+
+            <p>
+
+                Catálogo premium con productos
+                profesionales de belleza.
+
+            </p>
+
+            <a href="#catalogo" class="btn">
+
+                Ver Productos
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="categorias">
+
+        <h2>
+
+            Categorías Principales
+
+        </h2>
+
+        <div class="cards">
+
+            <!-- CARD PELUQUERIA -->
+            <a href="peluqueria.html" class="card">
+
+                <div class="card-img">
+
+                    <img src="img/peluqueria.png" alt="img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <i class="fa-solid fa-scissors"></i>
+
+                    <h3>
+                        Peluquería
+                    </h3>
+
+                    <p>
+                        Productos profesionales para cabello,
+                        tintes, secadores, planchas y más.
+                    </p>
+
+                    <span class="btn-card">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+            <!-- CARD MAQUILLAJE -->
+            <a href="maquillaje.html" class="card">
+
+                <div class="card-img">
+
+                    <img src="img/maquillaje.png" alt="img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <i class="fa-solid fa-palette"></i>
+
+                    <h3>
+                        Maquillaje
+                    </h3>
+
+                    <p>
+                        Productos profesionales de maquillaje,
+                        bases, labiales, brochas, sombras y más.
+                    </p>
+
+                    <span class="btn-card">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+            <!-- CARD UÑAS -->
+            <a href="uñas.html" class="card">
+
+                <div class="card-img">
+
+                    <img src="img/uñas.png" alt="img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <i class="fa-solid fa-hand-sparkles"></i>
+
+                    <h3>
+                        Uñas
+                    </h3>
+
+                    <p>
+                        Esmaltes, acrílicos, lámparas UV,
+                        decoración y accesorios premium.
+                    </p>
+
+                    <span class="btn-card">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- CARD OFERTAS -->
+            <a href="ofertas.html" class="card">
+
+                <div class="card-img">
+
+                    <img src="img/oferta.png" alt="img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <i class="fa-solid fa-tags"></i>
+
+                    <h3>
+                        Ofertas
+                    </h3>
+
+                    <p>
+                        Aprovecha descuentos exclusivos
+                        para productos de belleza profesional.
+                    </p>
+
+                    <span class="btn-card">
+                        Ver Ofertas
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CATALOGO -->
+    <section id="catalogo" class="catalogo">
+
+        <h2>
+
+            Productos Destacados
+
+        </h2>
+
+        <div class="productos">
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Secador Profesional
+                    </h3>
+
+                    <p class="precio">
+                        $320.000
+                    </p>
+
+                    <p>
+                        Tecnología iónica premium.
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=1200">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Plancha Premium
+                    </h3>
+
+                    <p class="precio">
+                        $280.000
+                    </p>
+
+                    <p>
+                        Protección térmica avanzada.
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Plancha Premium',280000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Kit Uñas Acrílicas
+                    </h3>
+
+                    <p class="precio">
+                        $145.000
+                    </p>
+
+                    <p>
+                        Kit profesional completo.
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Kit Uñas Acrílicas',145000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1200">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Esmaltes Premium
+                    </h3>
+
+                    <p class="precio">
+                        $65.000
+                    </p>
+
+                    <p>
+                        Larga duración y brillo intenso.
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Esmaltes Premium',65000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+
+        <h2>
+
+            Contáctanos
+
+        </h2>
+
+        <form>
+
+            <input type="text" placeholder="Nombre">
+
+            <input type="email" placeholder="Correo">
+
+            <textarea placeholder="Mensaje" rows="5"></textarea>
+
+            <button type="submit">
+
+                Enviar
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+
+            © 2026 FANGEL'S Estudio Profesional
+
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

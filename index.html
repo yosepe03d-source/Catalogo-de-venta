@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Fangel's Studio
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo-container">
+
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+
+            <h1>
+                Fangel's
+            </h1>
+
+        </div>
+
+        <!-- MENU -->
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="#categorias">
+                Categorías
+            </a>
+
+            <a href="#catalogo">
+                Catálogo
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+        </nav>
+
+        <!-- CARRITO -->
+        <div class="carrito-icono" onclick="abrirCarrito()">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">
+                0
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- PANEL CARRITO -->
+    <div id="panel-carrito">
+
+        <div class="carrito-header">
+
+            <h2>
+                Mi Carrito
+            </h2>
+
+            <i class="fa-solid fa-xmark" onclick="cerrarCarrito()"></i>
+
+        </div>
+
+        <!-- ITEMS -->
+        <div id="carrito-items">
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="carrito-footer">
+
+            <h3>
+
+                Total:
+                <span id="total">
+                    $0
+                </span>
+
+            </h3>
+
+            <button class="btn-finalizar">
+
+                Finalizar Compra
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-texto">
+
+            <h2>
+
+                Productos Profesionales
+                Peluquería, Maquillaje & Uñas
+                🛍️
+
+            </h2>
+
+            <p>
+
+                Catálogo premium con productos
+                profesionales de belleza.
+
+            </p>
+
+            <a href="#catalogo" class="btn">
+
+                Ver Productos
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="categorias">
+
+        <h2>
+
+            Categorías Principales
+
+        </h2>
+
+        <div class="cards">
+
+            <!-- CARD PELUQUERIA -->
+            <a href="peluqueria.html" class="card">
+
+                <div class="card-img">
+
+                    <img src="img/peluqueria.png" alt="img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <i class="fa-solid fa-scissors"></i>
+
+                    <h3>
+                        Peluquería
+                    </h3>
+
+                    <p>
+                        Productos profesionales para cabello,
+                        tintes, secadores, planchas y más.
+                    </p>
+
+                    <span class="btn-card">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+            <!-- CARD MAQUILLAJE -->
+            <a href="maquillaje.html" class="card">
+
+                <div class="card-img">
+
+                    <img src="img/maquillaje.png" alt="img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <i class="fa-solid fa-palette"></i>
+
+                    <h3>
+                        Maquillaje
+                    </h3>
+
+                    <p>
+                        Productos profesionales de maquillaje,
+                        bases, labiales, brochas, sombras y más.
+                    </p>
+
+                    <span class="btn-card">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+            <!-- CARD UÑAS -->
+            <a href="uñas.html" class="card">
+
+                <div class="card-img">
+
+                    <img src="img/uñas.png" alt="img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <i class="fa-solid fa-hand-sparkles"></i>
+
+                    <h3>
+                        Uñas
+                    </h3>
+
+                    <p>
+                        Esmaltes, acrílicos, lámparas UV,
+                        decoración y accesorios premium.
+                    </p>
+
+                    <span class="btn-card">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- CARD OFERTAS -->
+            <a href="ofertas.html" class="card">
+
+                <div class="card-img">
+
+                    <img src="img/oferta.png" alt="img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <i class="fa-solid fa-tags"></i>
+
+                    <h3>
+                        Ofertas
+                    </h3>
+
+                    <p>
+                        Aprovecha descuentos exclusivos
+                        para productos de belleza profesional.
+                    </p>
+
+                    <span class="btn-card">
+                        Ver Ofertas
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CATALOGO -->
+    <section id="catalogo" class="catalogo">
+
+        <h2>
+
+            Productos Destacados
+
+        </h2>
+
+        <div class="productos">
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Aceite de Cutícula con Aplicador Marca Miracle 15 ml.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Aceite de Cutícula con Aplicador
+                    </h3>
+
+                    <p class="precio">
+                        $9.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Broca 5 en 1 cerámica.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Broca 5 en 1 Cerámica
+                    </h3>
+
+                    <p class="precio">
+                        $15.500
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Broca cónica.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Broca Crónica
+                    </h3>
+
+                    <p class="precio">
+                        $10.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Cepillo para pedicura y manicura.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Cepillo para Pedicura y Manicura
+                    </h3>
+
+                    <p class="precio">
+                        $2.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Corta cutícula académico.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Corta Cutícula Académico
+                    </h3>
+
+                    <p class="precio">
+                        $16.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Efecto unicornio.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Efecto Unicornio
+                    </h3>
+
+                    <p class="precio">
+                        $8.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Estuche de Pusher.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Estuche de Pusher x2
+                    </h3>
+
+                    <p class="precio">
+                        $12.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Extensiones coffin XXL.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Extensiones Coffin XXL x500
+                    </h3>
+
+                    <p class="precio">
+                        $25.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Iman de alta potencia.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Imán de Alta Potencia
+                    </h3>
+
+                    <p class="precio">
+                        $15.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Imán De Ojo De Gato.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Imán de Ojo de Gato
+                    </h3>
+
+                    <p class="precio">
+                        $5.500
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Kit de brocas 2 en uno.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Kit de Brocas 2 en 1
+                    </h3>
+
+                    <p class="precio">
+                        $35.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Kit de brocas cerámicas x8.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Kit de Brocas Cerámicas x8
+                    </h3>
+
+                    <p class="precio">
+                        $35.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/kit de pinceles profesionales con punta de silicona.png" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Kit de Pinceles con Punta de Silicona
+                    </h3>
+
+                    <p class="precio">
+                        $10.500
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/lima de uñas profesional de doble.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Lima Sponge Estampada
+                    </h3>
+
+                    <p class="precio">
+                        $4.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Lima Sponge Uñas Acrilicas Removedor.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Lima Sponge 100/180 
+                    </h3>
+
+                    <p class="precio">
+                        $5.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/LIMA ZEBRA PREMIUM.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Lima Zebra
+                    </h3>
+
+                    <p class="precio">
+                        $3.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/lámpara UVLED para uñas.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Lámpara UVLED para Uñas
+                    </h3>
+
+                    <p class="precio">
+                        $25.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Mortero de vidrio transparente.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Mortero de Vidrio Transparente
+                    </h3>
+
+                    <p class="precio">
+                        $2.500
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Mortero sencillo morado y rosado.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Mortero Sencillo Morado y Rosado
+                    </h3>
+
+                    <p class="precio">
+                        $3.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/paletas mezcladoras de resina.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Paleta Mezcladora de Resina
+                    </h3>
+
+                    <p class="precio">
+                        $9.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/palitos de naranjo.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Palitos de Naranjo x100
+                    </h3>
+
+                    <p class="precio">
+                        $5.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Paños de algodon.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Paños de Algodon x500
+                    </h3>
+
+                    <p class="precio">
+                        $8.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+            
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Pegante con brocha.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Pegante con Brocha
+                    </h3>
+
+                    <p class="precio">
+                        $5.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Piedra  swarovski 5 linda.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Piedras Swarovski 5 lineas
+                    </h3>
+
+                    <p class="precio">
+                        $10.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/pincel doble para Polygel con espátula.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Picel doble para Polygel con Espátula
+                    </h3>
+
+                    <p class="precio">
+                        $10.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/pincel liner de lujo x3.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Pincel Liner x3
+                    </h3>
+
+                    <p class="precio">
+                        $33.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Pincel liner unicornio x3.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Pincel Liner Unicornio x3
+                    </h3>
+
+                    <p class="precio">
+                        $15.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Renovador en gel Miracle.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Renovador en Gel Miracle
+                    </h3>
+
+                    <p class="precio">
+                        $14.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Torre efecto espejo.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Torre efecto Espejo
+                    </h3>
+
+                    <p class="precio">
+                        $12.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Torre efecto flake.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Torre efecto Flake
+                    </h3>
+
+                    <p class="precio">
+                        $12.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Torre efecto micro caviare.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Torre efecto Micro Caviare x6
+                    </h3>
+
+                    <p class="precio">
+                        $12.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Torre neón jumbo.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Torre neón Jumbo
+                    </h3>
+
+                    <p class="precio">
+                        $12.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Torre princesa.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Torre Princesa
+                    </h3>
+
+                    <p class="precio">
+                        $10.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+             <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Uñas de práctica.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Uñas de Práctica x50
+                    </h3>
+
+                    <p class="precio">
+                        $7.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img U/Uñas dual sistem.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Uñas dual Sistem
+                    </h3>
+
+                    <p class="precio">
+                        $11.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!--Peluqueria productos-->
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img P/Caja gancho invisible.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Caja Gancho Invisible
+                    </h3>
+
+                    <p class="precio">
+                        $3.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="producto">
+
+                <img src="img P/Liga para cabello.jpg" alt="img">
+
+                <div class="contenido-producto">
+
+                    <h3>
+                        Liga para Cabello
+                    </h3>
+
+                    <p class="precio">
+                        $2.000
+                    </p>
+
+                    <button class="btn-carrito" onclick="agregarCarrito('Secador Profesional',320000)">
+
+                        Agregar al carrito
+
+                    </button>
+
+                </div>
+            </div>
+
+
+
+            
+            
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+
+        <h2>
+
+            Contáctanos
+
+        </h2>
+
+        <form>
+
+            <input type="text" placeholder="Nombre">
+
+            <input type="email" placeholder="Correo">
+
+            <textarea placeholder="Mensaje" rows="5"></textarea>
+
+            <button type="submit">
+
+                Enviar
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+
+            © 2026 FANGEL'S Estudio Profesional
+
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
