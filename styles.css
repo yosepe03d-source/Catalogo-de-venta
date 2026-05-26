@@ -787,42 +787,63 @@ footer{
 }
 
 /* =========================================
-   RESPONSIVE EXTRA
-   CELULARES - TABLETS - LAPTOPS
+   RESPONSIVE EXTRA PROFESIONAL
 ========================================= */
 
-/* =========================
-   LAPTOPS PEQUEÑOS
-========================= */
-@media(max-width:1200px){
+/* TABLETS */
+@media screen and (max-width: 1024px){
 
     header{
-        padding: 18px 5%;
+        padding: 15px 5%;
+    }
+
+    nav a{
+        margin-left: 18px;
+        font-size: 15px;
     }
 
     .hero-content h2{
-        font-size: 60px;
+        font-size: 58px;
+    }
+
+    .hero-content p{
+        font-size: 20px;
+    }
+
+    .categorias h2,
+    .catalogo h2,
+    .contacto h2{
+        font-size: 50px;
     }
 
     .productos{
         grid-template-columns:
-        repeat(auto-fit, minmax(320px,1fr));
+        repeat(auto-fit,minmax(300px,1fr));
+    }
+
+    .cards{
+        grid-template-columns:
+        repeat(auto-fit,minmax(280px,1fr));
+    }
+
+    #panel-carrito{
+        width: 350px;
     }
 
 }
 
-/* =========================
-   TABLETS
-========================= */
-@media(max-width:768px){
+/* CELULARES GRANDES */
+@media screen and (max-width: 768px){
 
-    /* HEADER */
     header{
         flex-direction: column;
+        gap: 15px;
 
         padding: 15px 20px;
+    }
 
-        gap: 15px;
+    .logo-container{
+        justify-content: center;
     }
 
     .logo-container h1{
@@ -841,79 +862,70 @@ footer{
         justify-content: center;
         flex-wrap: wrap;
 
-        gap: 15px;
+        gap: 10px;
     }
 
     nav a{
         margin-left: 0;
-
-        font-size: 15px;
+        font-size: 14px;
     }
 
-    /* HERO */
     .hero{
-        padding:
-        220px 20px 100px;
+        min-height: 85vh;
 
         justify-content: center;
+
+        padding:
+        200px 20px 80px;
     }
 
     .hero-content{
         justify-content: center;
+        text-align: center;
     }
 
     .hero-texto{
-        text-align: center;
+        max-width: 100%;
     }
 
     .hero-content h2{
         font-size: 42px;
-
         line-height: 1.2;
     }
 
     .hero-content p{
-        font-size: 18px;
+        font-size: 17px;
+        line-height: 1.6;
     }
 
     .btn{
         padding: 15px 35px;
-
         font-size: 15px;
     }
 
-    /* TITULOS */
-    .categorias h2,
-    .catalogo h2,
-    .contacto h2{
-        font-size: 40px;
-
-        margin-bottom: 50px;
-    }
-
-    /* SECCIONES */
     .categorias,
     .catalogo,
     .contacto{
         padding: 90px 20px;
     }
 
-    /* CARDS */
+    .categorias h2,
+    .catalogo h2,
+    .contacto h2{
+        font-size: 36px;
+        margin-bottom: 45px;
+    }
+
     .cards{
         grid-template-columns: 1fr;
     }
 
-    .card-content h3{
-        font-size: 28px;
-    }
-
-    .card-content p{
-        font-size: 16px;
-    }
-
-    /* PRODUCTOS */
     .productos{
         grid-template-columns: 1fr;
+    }
+
+    .card-img{
+        height: 220px;
     }
 
     .producto img{
@@ -922,7 +934,6 @@ footer{
 
     .contenido-producto h3{
         font-size: 22px;
-
         min-height: auto;
     }
 
@@ -930,23 +941,19 @@ footer{
         font-size: 24px;
     }
 
-    /* CARRITO */
     #panel-carrito{
         width: 100%;
     }
 
-}
-
-/* =========================
-   CELULARES
-========================= */
-@media(max-width:480px){
-
-    body{
-        overflow-x: hidden;
+    .carrito-header h2{
+        font-size: 24px;
     }
 
-    /* HEADER */
+}
+
+/* CELULARES PEQUEÑOS */
+@media screen and (max-width: 480px){
+
     header{
         padding: 12px 15px;
     }
@@ -960,38 +967,40 @@ footer{
     }
 
     .logo-img{
-        width: 50px;
-        height: 50px;
+        width: 48px;
+        height: 48px;
     }
 
     nav{
-        gap: 10px;
+        gap: 8px;
     }
 
     nav a{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .carrito-icono{
-        font-size: 24px;
+        font-size: 25px;
     }
 
-    /* HERO */
-    .hero{
-        min-height: 85vh;
+    #contador-carrito{
+        width: 20px;
+        height: 20px;
 
+        font-size: 10px;
+    }
+
+    .hero{
         padding:
-        210px 15px 80px;
+        190px 15px 60px;
     }
 
     .hero-content h2{
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .hero-content p{
-        font-size: 16px;
-
-        line-height: 1.5;
+        font-size: 15px;
     }
 
     .btn{
@@ -1002,26 +1011,26 @@ footer{
         padding: 14px;
     }
 
-    /* TITULOS */
     .categorias h2,
     .catalogo h2,
     .contacto h2{
         font-size: 30px;
     }
 
-    /* PRODUCTOS */
-    .producto{
-        border-radius: 25px;
+    .card-content{
+        padding: 25px;
     }
 
-    .producto img{
-        height: 220px;
+    .card-content h3{
+        font-size: 24px;
+    }
 
-        padding: 10px;
+    .card-content p{
+        font-size: 15px;
     }
 
     .contenido-producto{
-        padding: 20px;
+        padding: 22px;
     }
 
     .contenido-producto h3{
@@ -1034,36 +1043,12 @@ footer{
 
     .btn-carrito{
         font-size: 15px;
-
-        padding: 14px;
+        padding: 13px;
     }
 
-    /* CARD */
-    .card{
-        border-radius: 25px;
-    }
-
-    .card-img{
-        height: 220px;
-    }
-
-    .card-content{
-        padding: 25px;
-    }
-
-    .card-content h3{
-        font-size: 24px;
-    }
-
-    .card-content i{
-        font-size: 42px;
-    }
-
-    /* FORM */
     form input,
     form textarea{
         padding: 15px;
-
         font-size: 14px;
     }
 
@@ -1071,40 +1056,33 @@ footer{
         width: 100%;
     }
 
-    /* FOOTER */
     footer{
-        padding: 25px 15px;
-
         font-size: 14px;
+        padding: 25px 15px;
     }
 
 }
 
-/* =========================
-   CELULARES MUY PEQUEÑOS
-========================= */
-@media(max-width:340px){
+/* PANTALLAS MUY GRANDES */
+@media screen and (min-width: 1600px){
 
     .hero-content h2{
-        font-size: 28px;
+        font-size: 95px;
     }
 
     .hero-content p{
-        font-size: 14px;
+        font-size: 28px;
     }
 
     .categorias h2,
     .catalogo h2,
     .contacto h2{
-        font-size: 26px;
+        font-size: 75px;
     }
 
-    .contenido-producto h3{
-        font-size: 18px;
-    }
-
-    .precio{
-        font-size: 20px;
+    .productos{
+        grid-template-columns:
+        repeat(auto-fit,minmax(450px,1fr));
     }
 
 }
