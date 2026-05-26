@@ -1,7 +1,25 @@
 let carrito = [];
 
 /* AGREGAR */
-function agregarCarrito(nombre, precio){
+function agregarCarrito(){
+
+    let boton = event.target;
+
+    let producto =
+    boton.closest(".producto");
+
+    let nombre =
+    producto.querySelector("h3").innerText;
+
+    let precioTexto =
+    producto.querySelector(".precio")
+    .innerText;
+
+    let precio = Number(
+        precioTexto
+        .replace("$","")
+        .replace(/\./g,"")
+    );
 
     carrito.push({
         nombre: nombre,
@@ -84,7 +102,7 @@ function cerrarCarrito(){
 
 }
 
-/* FINALIZAR COMPRA */
+/* FINALIZAR */
 document.querySelector(".btn-finalizar")
 .addEventListener("click",()=>{
 
