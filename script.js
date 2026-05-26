@@ -1,6 +1,8 @@
 let carrito = [];
 
-/* AGREGAR */
+/* =========================
+   AGREGAR AL CARRITO
+========================= */
 function agregarCarrito(){
 
     let boton = event.target;
@@ -19,6 +21,7 @@ function agregarCarrito(){
         precioTexto
         .replace("$","")
         .replace(/\./g,"")
+        .replace(",", "")
     );
 
     carrito.push({
@@ -28,9 +31,13 @@ function agregarCarrito(){
 
     actualizarCarrito();
 
+    abrirCarrito();
+
 }
 
-/* ACTUALIZAR */
+/* =========================
+   ACTUALIZAR CARRITO
+========================= */
 function actualizarCarrito(){
 
     document.getElementById("contador-carrito")
@@ -55,11 +62,12 @@ function actualizarCarrito(){
 
                 <h4>${producto.nombre}</h4>
 
-                <p>$${producto.precio.toLocaleString()}</p>
+                <p>$${producto.precio.toLocaleString("es-CO")}</p>
 
             </div>
 
-            <button onclick="eliminarProducto(${index})">
+            <button class="btn-eliminar"
+            onclick="eliminarProducto(${index})">
 
                 <i class="fa-solid fa-trash"></i>
 
@@ -73,11 +81,13 @@ function actualizarCarrito(){
 
     document.getElementById("total")
     .innerText =
-    "$" + total.toLocaleString();
+    "$" + total.toLocaleString("es-CO");
 
 }
 
-/* ELIMINAR */
+/* =========================
+   ELIMINAR PRODUCTO
+========================= */
 function eliminarProducto(index){
 
     carrito.splice(index,1);
@@ -86,7 +96,9 @@ function eliminarProducto(index){
 
 }
 
-/* ABRIR */
+/* =========================
+   ABRIR CARRITO
+========================= */
 function abrirCarrito(){
 
     document.getElementById("panel-carrito")
@@ -94,7 +106,9 @@ function abrirCarrito(){
 
 }
 
-/* CERRAR */
+/* =========================
+   CERRAR CARRITO
+========================= */
 function cerrarCarrito(){
 
     document.getElementById("panel-carrito")
@@ -102,7 +116,9 @@ function cerrarCarrito(){
 
 }
 
-/* FINALIZAR */
+/* =========================
+   FINALIZAR COMPRA
+========================= */
 document.querySelector(".btn-finalizar")
 .addEventListener("click",()=>{
 
@@ -112,7 +128,16 @@ document.querySelector(".btn-finalizar")
 
     }else{
 
-        alert("Compra realizada correctamente ✨");
+        let total = carrito.reduce(
+            (acc,producto)=> acc + producto.precio,
+            0
+        );
+
+        alert(
+            "Compra realizada correctamente ✨\n\n" +
+            "Total pagado: $" +
+            total.toLocaleString("es-CO")
+        );
 
         carrito = [];
 

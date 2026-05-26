@@ -785,3 +785,326 @@ footer{
     }
 
 }
+
+/* =========================================
+   RESPONSIVE EXTRA
+   CELULARES - TABLETS - LAPTOPS
+========================================= */
+
+/* =========================
+   LAPTOPS PEQUEÑOS
+========================= */
+@media(max-width:1200px){
+
+    header{
+        padding: 18px 5%;
+    }
+
+    .hero-content h2{
+        font-size: 60px;
+    }
+
+    .productos{
+        grid-template-columns:
+        repeat(auto-fit, minmax(320px,1fr));
+    }
+
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media(max-width:768px){
+
+    /* HEADER */
+    header{
+        flex-direction: column;
+
+        padding: 15px 20px;
+
+        gap: 15px;
+    }
+
+    .logo-container h1{
+        font-size: 26px;
+    }
+
+    .logo-img{
+        width: 55px;
+        height: 55px;
+    }
+
+    nav{
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    nav a{
+        margin-left: 0;
+
+        font-size: 15px;
+    }
+
+    /* HERO */
+    .hero{
+        padding:
+        220px 20px 100px;
+
+        justify-content: center;
+    }
+
+    .hero-content{
+        justify-content: center;
+    }
+
+    .hero-texto{
+        text-align: center;
+    }
+
+    .hero-content h2{
+        font-size: 42px;
+
+        line-height: 1.2;
+    }
+
+    .hero-content p{
+        font-size: 18px;
+    }
+
+    .btn{
+        padding: 15px 35px;
+
+        font-size: 15px;
+    }
+
+    /* TITULOS */
+    .categorias h2,
+    .catalogo h2,
+    .contacto h2{
+        font-size: 40px;
+
+        margin-bottom: 50px;
+    }
+
+    /* SECCIONES */
+    .categorias,
+    .catalogo,
+    .contacto{
+        padding: 90px 20px;
+    }
+
+    /* CARDS */
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .card-content h3{
+        font-size: 28px;
+    }
+
+    .card-content p{
+        font-size: 16px;
+    }
+
+    /* PRODUCTOS */
+    .productos{
+        grid-template-columns: 1fr;
+    }
+
+    .producto img{
+        height: 260px;
+    }
+
+    .contenido-producto h3{
+        font-size: 22px;
+
+        min-height: auto;
+    }
+
+    .precio{
+        font-size: 24px;
+    }
+
+    /* CARRITO */
+    #panel-carrito{
+        width: 100%;
+    }
+
+}
+
+/* =========================
+   CELULARES
+========================= */
+@media(max-width:480px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header{
+        padding: 12px 15px;
+    }
+
+    .logo-container{
+        gap: 10px;
+    }
+
+    .logo-container h1{
+        font-size: 22px;
+    }
+
+    .logo-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    nav{
+        gap: 10px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+    .carrito-icono{
+        font-size: 24px;
+    }
+
+    /* HERO */
+    .hero{
+        min-height: 85vh;
+
+        padding:
+        210px 15px 80px;
+    }
+
+    .hero-content h2{
+        font-size: 34px;
+    }
+
+    .hero-content p{
+        font-size: 16px;
+
+        line-height: 1.5;
+    }
+
+    .btn{
+        width: 100%;
+
+        text-align: center;
+
+        padding: 14px;
+    }
+
+    /* TITULOS */
+    .categorias h2,
+    .catalogo h2,
+    .contacto h2{
+        font-size: 30px;
+    }
+
+    /* PRODUCTOS */
+    .producto{
+        border-radius: 25px;
+    }
+
+    .producto img{
+        height: 220px;
+
+        padding: 10px;
+    }
+
+    .contenido-producto{
+        padding: 20px;
+    }
+
+    .contenido-producto h3{
+        font-size: 20px;
+    }
+
+    .precio{
+        font-size: 22px;
+    }
+
+    .btn-carrito{
+        font-size: 15px;
+
+        padding: 14px;
+    }
+
+    /* CARD */
+    .card{
+        border-radius: 25px;
+    }
+
+    .card-img{
+        height: 220px;
+    }
+
+    .card-content{
+        padding: 25px;
+    }
+
+    .card-content h3{
+        font-size: 24px;
+    }
+
+    .card-content i{
+        font-size: 42px;
+    }
+
+    /* FORM */
+    form input,
+    form textarea{
+        padding: 15px;
+
+        font-size: 14px;
+    }
+
+    form button{
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer{
+        padding: 25px 15px;
+
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   CELULARES MUY PEQUEÑOS
+========================= */
+@media(max-width:340px){
+
+    .hero-content h2{
+        font-size: 28px;
+    }
+
+    .hero-content p{
+        font-size: 14px;
+    }
+
+    .categorias h2,
+    .catalogo h2,
+    .contacto h2{
+        font-size: 26px;
+    }
+
+    .contenido-producto h3{
+        font-size: 18px;
+    }
+
+    .precio{
+        font-size: 20px;
+    }
+
+}
